@@ -1,15 +1,23 @@
-// import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { ProduitService } from '../produit.service';
 
-// @Component({
-//   selector: 'app-listermoyendepaiement',
-//   templateUrl: './listermoyendepaiement.component.html',
-//   styleUrls: ['./listermoyendepaiement.component.css']
-// })
-// export class ListermoyendepaiementComponent implements OnInit {
+@Component({
+  selector: 'app-listermoyendepaiement',
+  templateUrl: './listermoyendepaiement.component.html',
+  styleUrls: ['./listermoyendepaiement.component.css']
+})
+export class ListermoyendepaiementComponent implements OnInit {
 
-//   constructor() { }
+   pageProduits: any;
+    constructor(private service: ProduitService, private router: Router) { }
 
-//   ngOnInit() {
-//   }
+  ngOnInit() {
+      this.service.getProduit()
+        .subscribe(data => {
+            this.pageMoyensde = data;
+        }, err => {
+            console.log(err);
+        });
 
-// }
+}
