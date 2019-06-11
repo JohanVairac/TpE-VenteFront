@@ -26,6 +26,9 @@ import { ListeradressefacturationComponent } from './listeradressefacturation/li
 import { ListeradresselivraisonComponent } from './listeradresselivraison/listeradresselivraison.component';
 import { AjouteradresselivraisonComponent } from './ajouteradresselivraison/ajouteradresselivraison.component';
 import { ModifieradresselivraisonComponent } from './modifieradresselivraison/modifieradresselivraison.component';
+import { AjoutermoyendepaiementComponent } from './ajoutermoyendepaiement/ajoutermoyendepaiement.component';
+import { ListermoyendepaiementComponent } from './listermoyendepaiement/listermoyendepaiement.component';
+import { ListercatalogueComponent } from './listercatalogue/listercatalogue.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +55,10 @@ import { ModifieradresselivraisonComponent } from './modifieradresselivraison/mo
     ListeradressefacturationComponent,
     ListeradresselivraisonComponent,
     AjouteradresselivraisonComponent,
-    ModifieradresselivraisonComponent
+    ModifieradresselivraisonComponent,
+    AjoutermoyendepaiementComponent,
+    ListermoyendepaiementComponent,
+    ListercatalogueComponent
   ],
   imports: [
     BrowserModule,
