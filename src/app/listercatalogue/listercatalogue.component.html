@@ -1,3 +1,18 @@
-<p>
-  listercatalogue works!
-</p>
+<div class="container spacer">
+    <div class="panel panel-primary">
+        <div class="panel-heading">lister les catalogues</div>
+        <div class="panel-body">
+            <table class="table table-striped">
+                <tr>
+                    <td>ID</td>
+                    <td>NOM</td> 
+                </tr>
+                <tr *ngFor="let c of pageCatalogues">
+                    <td>{{c.idCatalogue}}</td>
+                    <td>{{c.nomCatalogue}}</td>
+                    <td><button (click)="deleteProduit(p.idProduit)">Supprimer</button> </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
