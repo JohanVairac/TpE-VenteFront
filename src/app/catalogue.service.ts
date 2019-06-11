@@ -1,9 +1,15 @@
-// // import { Injectable } from '@angular/core';
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
-// @Injectable({
-//   providedIn: 'root'
-// })
-// export class CatalogueService {
+@Injectable({
+  providedIn: 'root'
+})
+export class CatalogueService {
 
-//   constructor() { }
-// }
+  constructor(private http: HttpClient) { }
+
+   getCatalogue() {
+      return this.http.get('http://localhost:8080/catalogues/');
+  }
+
+}

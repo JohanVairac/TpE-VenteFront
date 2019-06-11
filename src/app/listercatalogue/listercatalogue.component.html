@@ -1,18 +1,15 @@
 <div class="container spacer">
     <div class="panel panel-primary">
-        <div class="panel-heading">lister les catalogues</div>
+        <div class="panel-headind">Catalogue</div>
         <div class="panel-body">
-            <table class="table table-striped">
-                <tr>
-                    <td>ID</td>
-                    <td>NOM</td> 
-                </tr>
-                <tr *ngFor="let c of pageCatalogues">
-                    <td>{{c.idCatalogue}}</td>
-                    <td>{{c.nomCatalogue}}</td>
-                    <td><button (click)="deleteProduit(p.idProduit)">Supprimer</button> </td>
-                </tr>
-            </table>
+		<div class="filter-content">
+			<div class="list-group list-group-flush">
+			  <a class="list-group-item" href="#">Cosmetiques <span class="float-right badge badge-secondary round">6</span> </a>
+			  <a class="list-group-item" href="#">Vetements  <span class="float-right badge badge-secondary round">6</span>  </a>
+			  <a class="list-group-item" href="#">Chaussures<span class="float-right badge badge-secondary round">6</span>  </a>
+            </div>  <!-- list-group .// -->
+        </div>
         </div>
     </div>
 </div>
+        
