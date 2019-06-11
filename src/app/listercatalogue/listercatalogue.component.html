@@ -1,14 +1,18 @@
 <div class="container spacer">
     <div class="panel panel-primary">
-        <div class="panel-headind">Catalogue</div>
+        <div class="panel-headind">CATALOGUE</div>
         <div class="panel-body">
-		<div class="filter-content">
-			<div class="list-group list-group-flush">
-			  <a class="list-group-item" href="#">Cosmetiques <span class="float-right badge badge-secondary round">6</span> </a>
-			  <a class="list-group-item" href="#">Vetements  <span class="float-right badge badge-secondary round">6</span>  </a>
-			  <a class="list-group-item" href="#">Chaussures<span class="float-right badge badge-secondary round">6</span>  </a>
-            </div>  <!-- list-group .// -->
-        </div>
+            <table class="table table-striped">
+                <tr>
+                    <td>NOS PRODUITS </td> 
+                </tr>
+                <tr *ngFor="let c of pageCatalogues">
+                    <td>{{c.nomCatalogue}}</td>
+                    
+                    
+                    
+                </tr>
+            </table>
         </div>
     </div>
 </div>

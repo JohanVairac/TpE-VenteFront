@@ -27,7 +27,7 @@ import { ListeradresselivraisonComponent } from './listeradresselivraison/lister
 import { AjouteradresselivraisonComponent } from './ajouteradresselivraison/ajouteradresselivraison.component';
 import { ModifieradresselivraisonComponent } from './modifieradresselivraison/modifieradresselivraison.component';
 import { AjoutermoyendepaiementComponent } from './ajoutermoyendepaiement/ajoutermoyendepaiement.component';
-import { ListermoyendepaiementComponent } from './listermoyendepaiement/listermoyendepaiement.component';
+// import { ListermoyendepaiementComponent } from './listermoyendepaiement/listermoyendepaiement.component';
 import { ListercatalogueComponent } from './listercatalogue/listercatalogue.component';
 
 import {HttpClientModule} from '@angular/common/http';
@@ -60,7 +60,7 @@ import {FormsModule} from '@angular/forms';
     AjouteradresselivraisonComponent,
     ModifieradresselivraisonComponent,
     AjoutermoyendepaiementComponent,
-    ListermoyendepaiementComponent,
+    // ListermoyendepaiementComponent,
     ListercatalogueComponent
   ],
   imports: [
