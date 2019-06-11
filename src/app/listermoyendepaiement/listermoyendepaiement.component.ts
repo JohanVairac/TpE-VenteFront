@@ -18,6 +18,7 @@ export class ListermoyendepaiementComponent implements OnInit {
             this.pageMoyensde = data;
         }, err => {
             console.log(err);
+
         });
 
 }
