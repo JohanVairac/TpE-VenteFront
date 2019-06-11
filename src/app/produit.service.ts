@@ -16,7 +16,5 @@ export class ProduitService {
       return this.http.post('http://localhost:8080/produits/', produit);
     }
 
-    deleteProduit(idProduit: number) {
-        return this.http.delete('http://localhost:8080/produits/' + idProduit);
-    }
+
 }

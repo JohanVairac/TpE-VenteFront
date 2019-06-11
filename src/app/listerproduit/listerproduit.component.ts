@@ -20,8 +20,6 @@ export class ListerproduitComponent implements OnInit {
             console.log(err);
         });
   }
-  deleteProduit(idProduit: number) {
-      this.service.deleteProduit(idProduit).subscribe(data => this.ngOnInit()); 
-    }
+
 
 }

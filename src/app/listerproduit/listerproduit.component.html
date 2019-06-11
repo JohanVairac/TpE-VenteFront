@@ -4,14 +4,14 @@
         <div class="panel-body">
             <table class="table table-striped">
                 <tr>
-                    <td>ID</td><td>NOM DU PRODUIT</td><td>QUANTITE</td><td>PRIX</td><td>SUPPRIMER</td>
+                    <td>ID</td><td>NOM DU PRODUIT</td><td>QUANTITE</td><td>PRIX</td>
                 </tr>
                 <tr *ngFor="let p of pageProduits">
                     <td>{{p.idProduit}}</td>
                     <td>{{p.nomProduit}}</td>
                     <td>{{p.quantite}}</td>
                     <td>{{p.prix}}</td>
-                    <td><button (click)="deleteProduit(p.idProduit)">Delete</button> </td>
+                    
                     
                 </tr>
             </table>
