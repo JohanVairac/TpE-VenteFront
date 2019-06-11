@@ -1,5 +1,18 @@
-<app-listercatalogue></app-listercatalogue>
+<!-- <app-listercatalogue></app-listercatalogue>
 <app-listerproduit></app-listerproduit>
-<!-- <app-listermoyendepaiement></app-listermoyendepaiement> -->
+ <app-listermoyendepaiement></app-listermoyendepaiement> 
 
-<router-outlet></router-outlet>
+<router-outlet></router-outlet> -->
+
+<div class="container spacer">
+    <!-- ecrire le menu -->
+    <div class="container">
+        <button routerLink="/listerCatalogue" class="btn btn-primary mr-2">Afficher le Catalogue</button>
+        <button routerLink="/listerProduit" class="btn btn-primary mr-2">Liste des Produits</button>
+        
+    </div>
+    <div class="container spacer">
+        <!-- zone d'affichage -->
+        <router-outlet></router-outlet>
+    </div>
+</div>
