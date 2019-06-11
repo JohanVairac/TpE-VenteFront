@@ -4,8 +4,8 @@ import { ListerproduitComponent } from './listerproduit/listerproduit.component'
 import { ListercatalogueComponent } from './listercatalogue/listercatalogue.component';
 
 const routes: Routes = [
-{path: 'listerproduit', component: ListerproduitComponent},
-{path: 'listercatalogue', component: ListercatalogueComponent}
+{path: 'listerProduit', component: ListerproduitComponent},
+{path: 'listerCatalogue', component: ListercatalogueComponent}
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

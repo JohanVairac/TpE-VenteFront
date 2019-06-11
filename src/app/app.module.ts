@@ -32,7 +32,23 @@ import { ListercatalogueComponent } from './listercatalogue/listercatalogue.comp
 
 import {HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
+import { Routes } from '@angular/router';
 
+const appRoutes: Routes = [
+    { path: 'listerCatalogue', component: ListercatalogueComponent },
+    
+
+    { path: 'listerProduit', component: ListerproduitComponent },
+   
+
+   
+
+    {
+        path: '',
+        redirectTo: 'listerProduit',
+        pathMatch: 'full'
+    }
+];
 @NgModule({
   declarations: [
     AppComponent,
