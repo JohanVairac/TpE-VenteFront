@@ -9,13 +9,13 @@ import { ProduitService } from '../produit.service';
 })
 export class ListermoyendepaiementComponent implements OnInit {
 
-   pageProduits: any;
+   pageMoyensdePaiment: any;
     constructor(private service: ProduitService, private router: Router) { }
 
   ngOnInit() {
       this.service.getProduit()
         .subscribe(data => {
-            this.pageMoyensde = data;
+            this.pageMoyensdePaiment = data;
         }, err => {
             console.log(err);
 
