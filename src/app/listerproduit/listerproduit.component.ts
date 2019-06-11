@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { ProduitService } from '../produit.service';
 
 @Component({
   selector: 'app-listerproduit',
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListerproduitComponent implements OnInit {
 
-  constructor() { }
+   pageProduits: any;
+    constructor(private service: ProduitService, private router: Router) { }
 
   ngOnInit() {
+      this.service.getProduit()
+        .subscribe(data => {
+            this.pageProduits = data;
+        }, err => {
+            console.log(err);
+        });
   }
+  deleteProduit(idProduit: number) {
+      this.service.deleteProduit(idProduit).subscribe(data => this.ngOnInit()); 
+    }
 
 }

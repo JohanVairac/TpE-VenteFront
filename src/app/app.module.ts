@@ -30,6 +30,9 @@ import { AjoutermoyendepaiementComponent } from './ajoutermoyendepaiement/ajoute
 import { ListermoyendepaiementComponent } from './listermoyendepaiement/listermoyendepaiement.component';
 import { ListercatalogueComponent } from './listercatalogue/listercatalogue.component';
 
+import {HttpClientModule} from '@angular/common/http';
+import {FormsModule} from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -62,7 +65,9 @@ import { ListercatalogueComponent } from './listercatalogue/listercatalogue.comp
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
