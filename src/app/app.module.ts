@@ -41,17 +41,17 @@ import { CommandeComponent } from './commande/commande.component';
 
 const appRoutes: Routes = [
     { path: 'listerCatalogue', component: ListercatalogueComponent },
-<<<<<<< HEAD
+
 
     { path: 'listerProduit', component: ListerproduitComponent },
-=======
+
     { path: 'listerProduit', component: ListerproduitComponent },
     { path: 'listerPromotion', component: ListerPromotionComponent },
 
 
 
 
->>>>>>> 9b1337b55156288c668d75bbaceea93754a63bbf
+
     {
         path: '',
         redirectTo: 'listerProduit',
