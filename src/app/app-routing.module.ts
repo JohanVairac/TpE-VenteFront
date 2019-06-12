@@ -5,7 +5,7 @@ import { ListercatalogueComponent } from './listercatalogue/listercatalogue.comp
 import { ListerPromotionComponent } from './lister-promotion/lister-promotion.component';
 
 const routes: Routes = [
-{path: 'listerProduit', component: ListerproduitComponent},
+ {path: 'listerProduit', component: ListerproduitComponent},
 {path: 'listerCatalogue', component: ListercatalogueComponent},
 {path: 'listerPromotion', component: ListerPromotionComponent},
 

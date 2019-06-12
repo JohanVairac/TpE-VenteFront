@@ -72,7 +72,7 @@ const appRoutes: Routes = [
     ListercommandeComponent,
     ListerpersonneComponent,
     ListerproduitComponent,
-    AjouteradministrateurComponent,
+     AjouteradministrateurComponent,
     ListeradministrateurComponent,
     AjouteradressefacturationComponent,
     ModifieradressefacturationComponent,

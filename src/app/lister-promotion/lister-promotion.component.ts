@@ -13,7 +13,7 @@ export class ListerPromotionComponent implements OnInit {
   constructor(private service: PromotionService , private router: Router) { }
 
   ngOnInit() {
-	  this.service.getPromotion()
+	   this.service.getPromotion()
         .subscribe(data => {
             this.pagePromotions = data;
         }, err => {
