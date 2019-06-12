@@ -10,11 +10,11 @@ export class ClientService {
 
 	
    }
-    getClient() {
-      return this.http.get('http://localhost:8080/clients/');
+    getClients() {
+      return this.http.get('http://localhost:8080/clients');
   }
 
-  saveClient(client) {
-      return this.http.post('http://localhost:8080/produits/', client);
+  saveClient(client :any) {
+      return this.http.post('http://localhost:8080/clients/', client);
     }
 }
