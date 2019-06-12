@@ -33,14 +33,25 @@ import {HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
 import { Routes } from '@angular/router';
 import { PanierachatComponent } from './panierachat/panierachat.component';
+
+import { ListerPromotionComponent } from './lister-promotion/lister-promotion.component';
 import { ProduitComponent } from './produit/produit.component';
 import { CommandeComponent } from './commande/commande.component';
 
 
 const appRoutes: Routes = [
     { path: 'listerCatalogue', component: ListercatalogueComponent },
+<<<<<<< HEAD
 
     { path: 'listerProduit', component: ListerproduitComponent },
+=======
+    { path: 'listerProduit', component: ListerproduitComponent },
+    { path: 'listerPromotion', component: ListerPromotionComponent },
+
+
+
+
+>>>>>>> 9b1337b55156288c668d75bbaceea93754a63bbf
     {
         path: '',
         redirectTo: 'listerProduit',
@@ -65,7 +76,7 @@ const appRoutes: Routes = [
     ListercommandeComponent,
     ListerpersonneComponent,
     ListerproduitComponent,
-    AjouteradministrateurComponent,
+     AjouteradministrateurComponent,
     ListeradministrateurComponent,
     AjouteradressefacturationComponent,
     ModifieradressefacturationComponent,
@@ -77,6 +88,8 @@ const appRoutes: Routes = [
     ListermoyendepaiementComponent,
     ListercatalogueComponent,
     PanierachatComponent,
+
+    ListerPromotionComponent,
     ProduitComponent,
     CommandeComponent,
 

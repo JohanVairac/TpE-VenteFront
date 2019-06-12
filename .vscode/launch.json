@@ -10,7 +10,11 @@
             "request": "launch",
             "url": "http://localhost:4200/#",
             "webRoot": "${workspaceFolder}",
+<<<<<<< HEAD
             "port": 9221
+=======
+            "port": 9264
+>>>>>>> 9b1337b55156288c668d75bbaceea93754a63bbf
         }
     ]
 }

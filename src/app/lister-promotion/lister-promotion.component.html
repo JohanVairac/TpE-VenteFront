@@ -1,0 +1,30 @@
+<div class="container spacer">
+    <div class="panel panel-primary">
+        <div class="panel-heading">Liste des Produits </div>
+        <div class="panel-body">
+            <table class="table table-striped">
+                   <tr> 
+                     <td>ID Promo</td>
+                     <td>Nom Du Produit</td>
+                    <td>Date Debut Promotion</td>
+                    <td>Date De Fin Promtion</td>
+                    <td>PRIX</td>
+
+                </tr>
+
+                 <tr *ngFor="let p of pagePromotions">
+                    <td>{{p.idPromo}}</td>
+                    <td>{{p.nomProduit}}</td>
+				   <!-- <td>{{p.produit.nomProduit}}</td> -->
+                    <td>{{p.dateDebutPromo}}</td>
+                    <td>{{p.dateFinPromo}}</td>
+					<td>{{p.prixPromo}}</td>
+					<button>Solde</button>
+        
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+</div>
