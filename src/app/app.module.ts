@@ -29,7 +29,6 @@ import { ModifieradresselivraisonComponent } from './modifieradresselivraison/mo
 import { AjoutermoyendepaiementComponent } from './ajoutermoyendepaiement/ajoutermoyendepaiement.component';
 import { ListermoyendepaiementComponent } from './listermoyendepaiement/listermoyendepaiement.component';
 import { ListercatalogueComponent } from './listercatalogue/listercatalogue.component';
-
 import {HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
 import { Routes } from '@angular/router';
