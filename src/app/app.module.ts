@@ -34,6 +34,7 @@ import {HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
 import { Routes } from '@angular/router';
 
+
 const appRoutes: Routes = [
     { path: 'listerCatalogue', component: ListercatalogueComponent },
     
@@ -77,7 +78,8 @@ const appRoutes: Routes = [
     ModifieradresselivraisonComponent,
     AjoutermoyendepaiementComponent,
     // ListermoyendepaiementComponent,
-    ListercatalogueComponent
+    ListercatalogueComponent,
+   
   ],
   imports: [
     BrowserModule,
