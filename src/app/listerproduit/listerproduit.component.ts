@@ -10,6 +10,7 @@ import { ProduitService } from '../produit.service';
 export class ListerproduitComponent implements OnInit {
 
    pageProduits: any;
+   
     constructor(private service: ProduitService, private router: Router) { }
 
   ngOnInit() {
