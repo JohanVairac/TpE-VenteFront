@@ -34,6 +34,8 @@ import {HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
 import { Routes } from '@angular/router';
 import { PanierachatComponent } from './panierachat/panierachat.component';
+import { ProduitComponent } from './produit/produit.component';
+import { CommandeComponent } from './commande/commande.component';
 
 
 const appRoutes: Routes = [
@@ -81,6 +83,8 @@ const appRoutes: Routes = [
     // ListermoyendepaiementComponent,
     ListercatalogueComponent,
     PanierachatComponent,
+    ProduitComponent,
+    CommandeComponent,
    
   ],
   imports: [
