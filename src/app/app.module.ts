@@ -34,16 +34,16 @@ import {HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
 import { Routes } from '@angular/router';
 import { PanierachatComponent } from './panierachat/panierachat.component';
+import { ListerPromotionComponent } from './lister-promotion/lister-promotion.component';
 
 
 const appRoutes: Routes = [
     { path: 'listerCatalogue', component: ListercatalogueComponent },
-    
-
     { path: 'listerProduit', component: ListerproduitComponent },
-   
+    { path: 'listerPromotion', component: ListerPromotionComponent },
 
-   
+
+
 
     {
         path: '',
@@ -81,6 +81,7 @@ const appRoutes: Routes = [
     // ListermoyendepaiementComponent,
     ListercatalogueComponent,
     PanierachatComponent,
+    ListerPromotionComponent,
    
   ],
   imports: [
