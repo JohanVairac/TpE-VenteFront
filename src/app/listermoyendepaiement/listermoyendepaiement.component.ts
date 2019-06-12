@@ -18,8 +18,6 @@ export class ListermoyendepaiementComponent implements OnInit {
                 this.pageMoyensdePaiment = data;
             }, err => {
                 console.log(err);
-
             });
-
     }
 }
