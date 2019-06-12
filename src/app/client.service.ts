@@ -10,7 +10,7 @@ export class ClientService {
 
 	
    }
-  getClient() {
+   getClient() {
       return this.http.get('http://localhost:8080/clients/');
   }
 
