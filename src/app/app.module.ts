@@ -33,6 +33,7 @@ import { ListercatalogueComponent } from './listercatalogue/listercatalogue.comp
 import {HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
 import { Routes } from '@angular/router';
+import { PanierachatComponent } from './panierachat/panierachat.component';
 
 
 const appRoutes: Routes = [
@@ -79,6 +80,7 @@ const appRoutes: Routes = [
     AjoutermoyendepaiementComponent,
     // ListermoyendepaiementComponent,
     ListercatalogueComponent,
+    PanierachatComponent,
    
   ],
   imports: [
