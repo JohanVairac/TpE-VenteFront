@@ -37,21 +37,15 @@ import { PanierachatComponent } from './panierachat/panierachat.component';
 import { ListerPromotionComponent } from './lister-promotion/lister-promotion.component';
 import { ProduitComponent } from './produit/produit.component';
 import { CommandeComponent } from './commande/commande.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 const appRoutes: Routes = [
     { path: 'listerCatalogue', component: ListercatalogueComponent },
-
-
     { path: 'listerProduit', component: ListerproduitComponent },
-
     { path: 'listerProduit', component: ListerproduitComponent },
-    { path: 'listerPromotion', component: ListerPromotionComponent },
-
-
-
-
-
+	{ path: 'listerPromotion', component: ListerPromotionComponent },
+	 {path: 'listerClient', component: ListerclientComponent},
     {
         path: '',
         redirectTo: 'listerProduit',
@@ -88,17 +82,17 @@ const appRoutes: Routes = [
     ListermoyendepaiementComponent,
     ListercatalogueComponent,
     PanierachatComponent,
-
     ListerPromotionComponent,
     ProduitComponent,
-    CommandeComponent,
+    CommandeComponent
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+	FormsModule,
+	BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
