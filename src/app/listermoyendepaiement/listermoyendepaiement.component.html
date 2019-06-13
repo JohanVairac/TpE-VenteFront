@@ -1,72 +1,63 @@
+
+
 <article class="card">
-    <div class="card-body p-5">
+<div class="card-body p-5">
+<p> <img src="images/icons/pay-visa.png"> 
+	<img src="images/icons/pay-visa-el.png"> 
+   <img src="images/icons/pay-mastercard.png"></p>
+<p class="alert alert-success">Message de succes ou echec</p>
 
-        <ul class="nav bg radius nav-pills nav-fill mb-3" role="tablist">
-            <li class="nav-item">
-                <a class="nav-link active" href="#nav-tab-card" data-toggle="pill">
-                    <i class="fa fa-credit-card"></i> Carte de credit</a></li>
-            <li class="nav-item">
-                <a class="nav-link" href="#nav-tab-bank" data-toggle="pill">
-                    <i class="fa fa-university"></i>Virement Bancaire</a></li>
-        </ul>
-        <div class="tab-content">
-            <div class="tab-pane fade show active" id="nav-tab-card">
-                <p class="alert alert-success">Message de succes ou erreur</p>
-                <form role="form">
-                    <div class="form-group">
-                        <label for="username">Entrer votre nom et prenom</label>
-                        <input name="username" class="form-control" required="" type="text" placeholder="">
-                    </div> <!-- form-group.// -->
+<form role="form">
+<div class="form-group">
+<label for="username">Taper votre nom et prenom</label>
+<div class="input-group">
+	<div class="input-group-prepend">
+		<span class="input-group-text"><i class="fa fa-user"></i></span>
+	</div>
+	<input name="username" class="form-control" required="" type="text" placeholder="">
+</div> <!-- input-group.// -->
+</div> <!-- form-group.// -->
 
-                    <div class="form-group">
-                        <label for="cardNumber">Taper votre numero de carte</label>
-                        <div class="input-group">
-                            <input name="cardNumber" class="form-control" type="text" placeholder="">
-                            <div class="input-group-append">
-                                <span class="input-group-text text-muted">
-                                    <i class="fab fa-cc-visa"></i> &nbsp;
-                                    <i class="fab fa-cc-mastercard"></i>
-                                </span>
-                            </div>
-                        </div>
-                    </div> <!-- form-group.// -->
+<div class="form-group">
+<label for="cardNumber">Taper votre numero de carte</label>
+<div class="input-group">
+	<div class="input-group-prepend">
+		<span class="input-group-text"><i class="fa fa-credit-card"></i></span>
+	</div>
+	<input name="cardNumber" class="form-control" type="text" placeholder="">
+</div> <!-- input-group.// -->
+</div> <!-- form-group.// -->
 
-                    <div class="row">
-                        <div class="col-sm-8">
-                            <div class="form-group">
-                                <label><span class="hidden-xs">Date d'expiration</span> </label>
-                                <div class="input-group">
-                                    <input class="form-control" type="number" placeholder="MM">
-                                    <input class="form-control" type="number" placeholder="YY">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="form-group">
-                                <label title="" data-original-title="3 codes digitals derriere la carte"
-                                    data-toggle="tooltip">CVV<i class="fa fa-question-circle"></i></label>
-                                <input class="form-control" required="" type="number">
-                            </div> <!-- form-group.// -->
-                        </div>
-                    </div> <!-- row.// -->
-                    <button class="subscribe btn btn-primary btn-block" type="button"> Confirmer </button>
-                </form>
-            </div> <!-- tab-pane.// -->
-            <div class="tab-pane fade" id="nav-tab-bank">
-                <p>Releve Identite Bancaire</p>
-                <dl class="param">
-                    <dt>BANQUE: </dt>
-                    <dd> ECOBANK</dd>
-                </dl>
-                <dl class="param">
-                    <dt>Numero de compte: </dt>
-                    <dd> 12345678912345</dd>
-                </dl>
-                <dl class="param">
-                    <dt>IBAN: </dt>
-                    <dd> 1234565489</dd>
-                </dl>                    
-            </div> <!-- tab-pane.// -->
-        </div> <!-- tab-content .// -->
-    </div> <!-- card-body.// -->
+<div class="row">
+    <div class="col-sm-8">
+        <div class="form-group">
+            <label><span class="hidden-xs">Date d'expiration</span> </label>
+        	<div class="form-inline">
+        		<select class="form-control" style="width:45%">
+				  <option>MM</option>
+				  <option>01 - Janvier</option>
+				  <option>02 - Fevrier</option>
+				  <option>03 - Mars</option>
+				</select>
+	            <span style="width:10%; text-align: center"> / </span>
+	            <select class="form-control" style="width:45%">
+				  <option>YY</option>
+				 <option>2020</option>
+                  <option>2021</option>
+                  <option>2022</option>
+				</select>
+        	</div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="form-group">
+            <label title="" data-original-title="3 digits code on back side of the card" data-toggle="tooltip">CVV <i class="fa fa-question-circle"></i></label>
+            <input class="form-control" required="" type="text">
+        </div> <!-- form-group.// -->
+    </div>
+</div> <!-- row.// -->
+<button class="subscribe btn btn-primary btn-block" type="button"> Confirmer </button>
+</form>
+</div> <!-- card-body.// -->
 </article> <!-- card.// -->
+
