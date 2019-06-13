@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { EcommerceService } from '../ecommerce.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-listercommande',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListercommandeComponent implements OnInit {
 
-  constructor() { }
+	 pageCommandes: any;
+  constructor(private service: EcommerceService , private router: Router) { }
 
   ngOnInit() {
+	   this.service.getCommandes()
+        .subscribe(data => {
+            this.pageCommandes = data;
+        }, err => {
+            console.log(err);
+        });
   }
 
 }

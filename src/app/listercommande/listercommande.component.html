@@ -1,3 +1,32 @@
-<p>
-  listercommande works!
-</p>
+<div class="container spacer">
+    <div class="panel panel-primary">
+        <div class="panel-heading">Liste des Commandes </div>
+        <div class="panel-body">
+            <table class="table table-striped">
+                   <tr> 
+                     <td>ID </td>
+                     <td>Nom DU PRODUIT </td>
+                    <td>NOMBRE DE PRODUIT</td>
+					<td>DATE DE LA COMMANDE</td>
+					 <td>PRIX</td>
+                
+                   
+
+                </tr>
+
+                 <tr *ngFor="let p of pageCommandes">
+                    <td>{{p.id}}</td>
+                    <td>{{p.produit.nomProduit}}</td>
+                    <td>{{p.nbreProduit}}</td>
+                    <td>{{p.dateCommande}}</td>
+					<td>{{p.produit.prix}}</td>
+					
+	
+        
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+</div>

@@ -46,6 +46,7 @@ const appRoutes: Routes = [
     { path: 'listerProduit', component: ListerproduitComponent },
 	{ path: 'listerPromotion', component: ListerPromotionComponent },
 	 {path: 'listerClient', component: ListerclientComponent},
+	 {path: 'listercommande', component: ListercommandeComponent},
     {
         path: '',
         redirectTo: 'listerProduit',
