@@ -1,55 +1,55 @@
 <article class="card">
-    <div class="card-body p-5">
+	<div class="card-body p-5">
 
-        <ul class="nav bg radius nav-pills nav-fill mb-3" role="tablist">
-            <li class="nav-item">
-                <a class="nav-link" href="#nav-tab-card" data-toggle="pill">
-                    <i class="fa fa-credit-card"></i> Carte de credit</a></li>
-                    </ul>
-        <div class="tab-content">
-            <div class="tab-pane fade" id="nav-tab-card">
-                <form role="form">
-                    <div class="form-group">
-                        <label for="username">Taper votre nom et prenom</label>
-                        <input name="username" class="form-control" required="" type="text" placeholder="">
-                    </div> <!-- form-group.// -->
+		<ul class="nav bg radius nav-pills nav-fill mb-3" role="tablist">
+			<li class="nav-item">
+				<a class="nav-link active show" href="#nav-tab-card" data-toggle="pill">
+					<i class="fa fa-credit-card"></i> Carte de credit</a></li>
+		</ul>
+		<div class="tab-content">
+			<div class="tab-pane fade active show" id="nav-tab-card">
+				<form role="form">
+					<div class="form-group">
+						<label for="username">Taper votre nom et prenom</label>
+						<input name="username" class="form-control" required="" type="text" placeholder="">
+					</div> <!-- form-group.// -->
 
-                    <div class="form-group">
-                        <label for="cardNumber">Taper votre numero de carte</label>
-                        <div class="input-group">
-                            <input name="cardNumber" class="form-control" type="text" placeholder="">
-                            <div class="input-group-append">
-                                <span class="input-group-text text-muted">
-                                    <i class="fab fa-cc-visa"></i> &nbsp;
-                                    <i class="fab fa-cc-mastercard"></i>
-                                </span>
-                            </div>
-                        </div>
-                    </div> <!-- form-group.// -->
+					<div class="form-group">
+						<label for="cardNumber">Taper le numero de votre carte</label>
+						<div class="input-group">
+							<input name="cardNumber" class="form-control" type="text" placeholder="">
+							<div class="input-group-append">
+								<span class="input-group-text text-muted">
+									<i class="fab fa-cc-visa"></i> &nbsp;
+									<i class="fab fa-cc-mastercard"></i>
+								</span>
+							</div>
+						</div>
+					</div> <!-- form-group.// -->
 
-                    <div class="row">
-                        <div class="col-sm-8">
-                            <div class="form-group">
-                                <label><span class="hidden-xs">Date Expiration</span> </label>
-                                <div class="input-group">
-                                    <input class="form-control" type="number" placeholder="MM">
-                                    <input class="form-control" type="number" placeholder="YY">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="form-group">
-                                <label title="" data-original-title="3 digits code on back side of the card"
-                                    data-toggle="tooltip">CVV <i class="fa fa-question-circle"></i></label>
-                                <input class="form-control" required="" type="number">
-                            </div> <!-- form-group.// -->
-                        </div>
-                    </div> <!-- row.// -->
-                    <button class="subscribe btn btn-primary btn-block" type="button"> Confirmer </button>
-                </form>
-            </div> <!-- tab-pane.// -->
-            
-        </div> <!-- tab-content .// -->
+					<div class="row">
+						<div class="col-sm-8">
+							<div class="form-group">
+								<label><span class="hidden-xs">Date Expiration</span> </label>
+								<div class="input-group">
+									<input class="form-control" type="number" placeholder="MM">
+									<input class="form-control" type="number" placeholder="YY">
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="form-group">
+								<label title="" data-original-title="3 digits code on back side of the card"
+									data-toggle="tooltip">CVV <i class="fa fa-question-circle"></i></label>
+								<input class="form-control" required="" type="number">
+							</div> <!-- form-group.// -->
+						</div>
+					</div> <!-- row.// -->
+					<button class="subscribe btn btn-primary btn-block" type="button"> Confirmer </button>
+				</form>
+			</div> <!-- tab-pane.// -->
+			
+		</div> <!-- tab-content .// -->
 
-    </div> <!-- card-body.// -->
+	</div> <!-- card-body.// -->
 </article> <!-- card.// -->
