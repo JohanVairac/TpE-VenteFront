@@ -6,9 +6,9 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ClientService {
 
-	constructor(private http: HttpClient) {
+ constructor(private http: HttpClient) {
 
-	
+
    }
     getClients() {
       return this.http.get('http://localhost:8080/clients');
