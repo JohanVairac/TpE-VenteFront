@@ -1,30 +1,24 @@
-<!-- <app-listercatalogue></app-listercatalogue>
-<app-listerproduit></app-listerproduit>
-<<<<<<< HEAD
- <app-listermoyendepaiement></app-listermoyendepaiement>
-
-=======
- <app-listermoyendepaiement></app-listermoyendepaiement> 
-<app-lister-promotion></app-lister-promotion>
->>>>>>> 9b1337b55156288c668d75bbaceea93754a63bbf
-<router-outlet></router-outlet> -->
 
 <div class="container spacer">
-    <!-- ecrire le menu -->
-    <div class="container">
-        <button routerLink="/listerCatalogue" class="btn btn-primary mr-2">Afficher le Catalogue</button>
-        <button routerLink="/listerProduit" class="btn btn-primary mr-2">Liste des Produits</button>
-        <button routerLink="/listerPromotion" class="btn btn-primary mr-2">AFFICHER LES PROMOTIONS</button>
-        <button routerLink="/ajouterclient" class="btn btn-primary mr-2">Ajouter Un Client</button>
-        <button routerLink="/listerclient" class="btn btn-primary mr-2">Afficher les Clients</button>
-        
+	<!-- ecrire le menu -->
+	<div class="card-group">
+	<div class="card-header bg-transparent">
+		<div class="container">
+			<button routerLink="/listerCatalogue" class="btn btn-info mr-2">CATALOGUE</button>
+			<button routerLink="/listerProduit" class="btn btn-info mr-2">Nos Produits</button>
+			<button routerLink="/listerPromotion" class="btn btn-info mr-2">LES PROMOS</button>
+			<button routerLink="/ajouterclient" class="btn btn-info mr-2">Nouveau client</button>
+			<button routerLink="/listerclient" class="btn btn-info mr-2">Tous les Clients</button>
+			<button routerLink="/listermoyendepaiement" class="btn btn-info mr-2">Paiement</button>
+			<button routerLink="/listercommande" class="btn btn-info mr-2">Les Commandes</button>
+		</div>
 	</div>
 
-	<div class="container spacer">
-        <!-- zone d'affichage -->
-        <router-outlet></router-outlet>
-    </div>
+	<div class="card-body">
+		<div class="container spacer">
+			<!-- zone d'affichage -->
+			<router-outlet></router-outlet>
+		</div>
+	</div>
 </div>
-<app-listermoyendepaiement></app-listermoyendepaiement>
-<app-ajouterclient></app-ajouterclient>
-<app-listerclient></app-listerclient>
+	 </div>

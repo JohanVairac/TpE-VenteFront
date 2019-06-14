@@ -1,3 +1,32 @@
-<p>
-  listerclient works!
-</p>
+<div class="container spacer">
+    <div class="panel panel-primary">
+        <div class="panel-heading">Liste des Clients </div>
+        <div class="panel-body">
+            <table class="table table-striped">
+                   <tr> 
+                     <td>ID </td>
+                     <td>Nom </td>
+                    <td>PRENOM</td>
+					<td>AGE</td>
+					 <td>EMAIL</td>
+                
+                   
+
+                </tr>
+
+                 <tr *ngFor="let p of pageClients">
+                    <td>{{p.idPersonne}}</td>
+                    <td>{{p.nom}}</td>
+                    <td>{{p.prenom}}</td>
+                    <td>{{p.age}}</td>
+					<td>{{p.email}}</td>
+					
+	
+        
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+</div>

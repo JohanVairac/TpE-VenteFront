@@ -7,19 +7,21 @@
                      <td>ID Promo</td>
                      <td>Nom Du Produit</td>
                     <td>Date Debut Promotion</td>
-                    <td>Date De Fin Promtion</td>
-                    <td>PRIX</td>
+					<td>Date De Fin Promtion</td>
+					 <td>PRIX PROMOTION</td>
+                    <td>PRIX INITIAL</td>
+                   
 
                 </tr>
 
                  <tr *ngFor="let p of pagePromotions">
                     <td>{{p.idPromo}}</td>
-                    <td>{{p.nomProduit}}</td>
-				   <!-- <td>{{p.produit.nomProduit}}</td> -->
-                    <td>{{p.dateDebutPromo}}</td>
-                    <td>{{p.dateFinPromo}}</td>
+                    <td>{{p.produit.nomProduit}}</td>
+                    <td>{{p.dateDebutPromo |date: 'dd/MM/yyyy'}}</td>
+                    <td>{{p.dateFinPromo |date: 'dd/MM/yyyy'}}</td>
+					<td>{{p.produit.prix}}</td>
 					<td>{{p.prixPromo}}</td>
-					<button>Solde</button>
+	
         
                 </tr>
             </table>

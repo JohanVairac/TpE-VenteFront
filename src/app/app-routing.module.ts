@@ -5,6 +5,8 @@ import { ListercatalogueComponent } from './listercatalogue/listercatalogue.comp
 import { ListerPromotionComponent } from './lister-promotion/lister-promotion.component';
 import { ListerclientComponent } from './listerclient/listerclient.component';
 import { AjouterclientComponent } from './ajouterclient/ajouterclient.component';
+import { ListermoyendepaiementComponent } from './listermoyendepaiement/listermoyendepaiement.component';
+import { ListercommandeComponent } from './listercommande/listercommande.component';
 
 const routes: Routes = [
  {path: 'listerProduit', component: ListerproduitComponent},
@@ -12,6 +14,8 @@ const routes: Routes = [
 {path: 'listerPromotion', component: ListerPromotionComponent},
 {path: 'ajouterclient', component: AjouterclientComponent},
 {path: 'listerclient', component: ListerclientComponent},
+{path: 'listermoyendepaiement', component: ListermoyendepaiementComponent},
+{path: 'listercommande', component: ListercommandeComponent},
 
   {
         path: '',
