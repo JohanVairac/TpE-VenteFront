@@ -1,21 +1,24 @@
 
-
 <div class="container spacer">
-    <!-- ecrire le menu -->
-    <div class="container">
-        <button routerLink="/listerCatalogue" class="btn btn-primary mr-2">CATALOGUE</button> 
-        <button routerLink="/listerProduit" class="btn btn-primary mr-2">Nos Produits</button>
-        <button routerLink="/listerPromotion" class="btn btn-primary mr-2">LES PROMOS</button>
-        <button routerLink="/ajouterclient" class="btn btn-primary mr-2">Nouveau client</button>
-        <button routerLink="/listerclient" class="btn btn-primary mr-2">Afficher les Clients</button><br/>
-        <button routerLink="/listermoyendepaiement" class="btn btn-primary mr-2">Paiement</button>
-        <button routerLink="/listercommande" class="btn btn-primary mr-2">Les Commandes</button>
-        
+	<!-- ecrire le menu -->
+	<div class="card-group">
+	<div class="card-header bg-transparent">
+		<div class="container">
+			<button routerLink="/listerCatalogue" class="btn btn-info mr-2">CATALOGUE</button>
+			<button routerLink="/listerProduit" class="btn btn-info mr-2">Nos Produits</button>
+			<button routerLink="/listerPromotion" class="btn btn-info mr-2">LES PROMOS</button>
+			<button routerLink="/ajouterclient" class="btn btn-info mr-2">Nouveau client</button>
+			<button routerLink="/listerclient" class="btn btn-info mr-2">Tous les Clients</button>
+			<button routerLink="/listermoyendepaiement" class="btn btn-info mr-2">Paiement</button>
+			<button routerLink="/listercommande" class="btn btn-info mr-2">Les Commandes</button>
+		</div>
 	</div>
 
-	<div class="container spacer">
-        <!-- zone d'affichage -->
-        <router-outlet></router-outlet>
-    </div>
+	<div class="card-body">
+		<div class="container spacer">
+			<!-- zone d'affichage -->
+			<router-outlet></router-outlet>
+		</div>
+	</div>
 </div>
-
+	 </div>
