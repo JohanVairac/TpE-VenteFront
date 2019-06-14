@@ -19,7 +19,6 @@ import { ListercommandeComponent } from './listercommande/listercommande.compone
 import { ListerpersonneComponent } from './listerpersonne/listerpersonne.component';
 import { ListerproduitComponent } from './listerproduit/listerproduit.component';
 import { AjouteradministrateurComponent } from './ajouteradministrateur/ajouteradministrateur.component';
-import { ListeradministrateurComponent } from './listeradministrateur/listeradministrateur.component';
 import { AjouteradressefacturationComponent } from './ajouteradressefacturation/ajouteradressefacturation.component';
 import { ModifieradressefacturationComponent } from './modifieradressefacturation/modifieradressefacturation.component';
 import { ListeradressefacturationComponent } from './listeradressefacturation/listeradressefacturation.component';
@@ -72,7 +71,6 @@ const appRoutes: Routes = [
     ListerpersonneComponent,
     ListerproduitComponent,
      AjouteradministrateurComponent,
-    ListeradministrateurComponent,
     AjouteradressefacturationComponent,
     ModifieradressefacturationComponent,
     ListeradressefacturationComponent,
